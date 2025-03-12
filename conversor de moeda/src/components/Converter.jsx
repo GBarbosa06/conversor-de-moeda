@@ -24,15 +24,17 @@ function Converter () {
     }
 
     return(
-        <div className='bg-cyan-600 w-100 rounded-md text-center p-5' >
-            <h1 className="">Conversor de moedas (USD) -{'>'} (BRL)</h1>
+        <div className='bg-emerald-800 w-100 h-40 rounded-md text-center p-5' >
+            <h1 className="text-white">Conversor de moedas (USD) -{'>'} (BRL)</h1>
             <input 
             type="number" 
             value={value1} 
-            onChange={(e) => setValue1(e.target.value)} placeholder="valor em R$" className="bg-slate-300"/>
+            onChange={(e) => setValue1(e.target.value)} placeholder="valor em R$" 
+            className="bg-slate-300 w-10 p-1 mt-3"/>
 
-            <button onClick={convertCurrency}>Converter</button>
-            <h2>{value2 !== undefined ? `Valor em BRL: R$ ${value2.toFixed(2)}` : "Carregando..."}</h2>
+            <button onClick={convertCurrency}
+            className="bg-blue-950 text-white p-1 hover:bg-blue-900 cursor-pointer mb-3">Converter</button>
+            <h2 className="text-white">{value2 !== undefined ? `Valor em BRL: R$ ${value2.toFixed(2)}` : "Carregando..."}</h2>
         </div>
     )
 }

@@ -5,7 +5,7 @@ function App() {
   const [counter, setCounter] = useState(0);
 
   return(
-    <div className='bg-cyan-400  flex justify-center min-h-screen min-w-screen p-6'>
+    <div className='bg-neutral-600  flex justify-center min-h-screen min-w-screen p-6'>
       <Converter />
     </div>
   )
